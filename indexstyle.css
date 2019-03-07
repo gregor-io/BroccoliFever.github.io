@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.welcome-grid {
+  background-color: #edb;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'navbar'
+    'image'
+    'image'
+    'image'
+    'image'
+    'image'
+    'myPic'
+    'myName'
+    'myEd'
+    'socialMedia';
+  height: 40rem;
+  min-width: 100%;
+  justify-items: center;
+  text-align: center;
+  color: slategrey;
+}
+
+/* remove resume download button from mobile */
+@media (max-width: 700px) {
+  .welcome-grid__resume-download {
+    display: none;
+  }
+}
+
+.welcome-grid__image {
+  grid-area: image;
+  margin-bottom: 1rem;
+}
+
+.welcome-grid__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.welcome-grid__my-pic {
+  grid-area: myPic;
+}
+
+.welcome-grid__my-pic img {
+  max-width: 7rem;
+  border-radius: 50%;
+}
+
+.welcome-grid__my-name {
+  grid-area: myName;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: -2rem;
+}
+
+.welcome-grid__my-education {
+  grid-area: myEd;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  max-width: 11rem;
+}
+
+.welcome-grid__social-media {
+  grid-area: socialMedia;
+  margin: 2rem;
+}
+
+.welcome-grid__social-media a:link, .welcome-grid__social-media a:visited {
+  text-decoration: none;
+  letter-spacing: 0.5rem;
+  color: slategrey;
+}
+
+.welcome-grid__social-media a:hover {
+  color: #82909e;
+}
+
+@media (min-width: 700px) {
+  .welcome-grid {
+    background-color: #edb;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      'navbar .'
+      'image myPic'
+      'image myName'
+      'image myEd'
+      'image socialMedia'
+      'image .'
+      'image downloadResume';
+    height: 46.5rem;
+  }
+  
+  .welcome-grid__image {
+    margin-bottom: 0rem;
+  }
+
+  .welcome-grid__my-pic img {
+    max-width: 10rem;
+    border-radius: 50%;
+  }
+
+  .welcome-grid__resume-download {
+    grid-area: downloadResume;
+  }
+
+  .welcome-grid__resume-download a:link, .welcome-grid__resume-download a:visited {
+    text-decoration: none;
+    background-color: slategrey;
+    color: #edb;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .welcome-grid__resume-download a:hover {
+    background-color: #82909e;
+  }
+}
+
+/** */
+/* making second card */
+/** */
+
+.about-me-card {
+  background-color: #f7f4e4;
+  color: slategrey;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: justify;
+}
+
+.about-me-card__title {
+  color: #edb;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  font-weight: 400;
+}
+
+.about-me-card__my-bio {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+@media (min-width: 700px) {
+  .about-me-card {
+    padding-left: 15rem;
+    padding-right: 20rem;
+  }
+}
