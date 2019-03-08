@@ -54,38 +54,39 @@ p {
 .welcome-grid__my-pic {
   grid-area: myPic;
 }
-
 .welcome-grid__my-pic img {
   max-width: 7rem;
   border-radius: 50%;
 }
 
-.welcome-grid__my-name p {
+.welcome-grid__my-name {
   grid-area: myName;
+  margin-bottom: -2rem;
+}
+.welcome-grid__my-name p {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   font-size: 2rem;
   letter-spacing: 0.1rem;
-  margin-bottom: -2rem;
 }
 
 .welcome-grid__my-education {
   grid-area: myEd;
-  font-size: 0.7rem;
   max-width: 11rem;
+}
+.welcome-grid__my-education p {
+  font-size: 0.7rem;
 }
 
 .welcome-grid__social-media {
   grid-area: socialMedia;
   margin: 2rem;
 }
-
 .welcome-grid__social-media a:link, .welcome-grid__social-media a:visited {
   text-decoration: none;
   letter-spacing: 0.5rem;
   color: slategrey;
 }
-
 .welcome-grid__social-media a:hover {
   color: #82909e;
 }
