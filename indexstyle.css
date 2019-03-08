@@ -2,13 +2,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 1.3rem;
-  font-weight: 300;
 }
 
 p {
   color: slategrey;
   font-family: 'Quicksand', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
 .welcome-grid {
