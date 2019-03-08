@@ -71,8 +71,7 @@ p {
 
 .welcome-grid__my-education {
   grid-area: myEd;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
+  font-size: 1rem;
   max-width: 11rem;
 }
 
@@ -160,7 +159,6 @@ p {
 
 .about-me-card__my-bio {
   line-height: 2rem;
-  color: purple;
 }
 
 @media (min-width: 700px) {
