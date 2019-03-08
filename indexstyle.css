@@ -71,7 +71,7 @@ p {
 
 .welcome-grid__my-education {
   grid-area: myEd;
-  font-size: 1rem;
+  font-size: 0.7rem;
   max-width: 11rem;
 }
 
