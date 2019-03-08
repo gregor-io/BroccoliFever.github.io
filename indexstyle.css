@@ -60,7 +60,7 @@ p {
   border-radius: 50%;
 }
 
-.welcome-grid__my-name {
+.welcome-grid__my-name p {
   grid-area: myName;
   font-family: 'Playfair Display', serif;
   font-weight: 500;
