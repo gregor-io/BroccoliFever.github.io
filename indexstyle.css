@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+p {
+  color: slategrey;
+}
+
 .welcome-grid {
   background-color: #edb;
   display: grid;
