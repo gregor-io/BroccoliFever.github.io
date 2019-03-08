@@ -160,6 +160,7 @@ p {
 
 .about-me-card__my-bio {
   line-height: 2rem;
+  color: purple;
 }
 
 @media (min-width: 700px) {
