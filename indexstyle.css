@@ -4,14 +4,35 @@
   margin: 0;
 }
 
-p {
+.body__text {
   color: slategrey;
   font-family: 'Quicksand', sans-serif;
   font-size: 1.3rem;
   font-weight: 300;
 }
+.body__text--smaller {
+  color: slategrey;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.body__header {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+.body__header--tan {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  color: #edb;
+}
 
 .welcome-grid {
+  position: relative;
   background-color: #edb;
   display: grid;
   grid-template-columns: 1fr;
@@ -24,11 +45,11 @@ p {
     'image'
     'image'
     'myPic'
-    'myName'
-    'myEd'
-    'socialMedia';
+    'my-name'
+    'my-education'
+    'my-social-media';
   height: 40rem;
-  min-width: 100%;
+  width: 100%;
   justify-items: center;
   text-align: center;
   color: slategrey;
@@ -44,11 +65,7 @@ p {
 .welcome-grid__image {
   grid-area: image;
   margin-bottom: 1rem;
-}
-
-.welcome-grid__image img {
-  width: 100%;
-  height: 100%;
+  overflow: hidden;
 }
 
 .welcome-grid__my-pic {
@@ -60,26 +77,20 @@ p {
 }
 
 .welcome-grid__my-name {
-  grid-area: myName;
+  grid-area: my-name;
   margin-bottom: -2rem;
-}
-.welcome-grid__my-name p {
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  font-size: 2rem;
-  letter-spacing: 0.1rem;
 }
 
 .welcome-grid__my-education {
-  grid-area: myEd;
+  grid-area: my-education;
   max-width: 11rem;
 }
-.welcome-grid__my-education p {
+.welcome-grid__my-education--smaller-font {
   font-size: 1rem;
 }
 
 .welcome-grid__social-media {
-  grid-area: socialMedia;
+  grid-area: my-social-media;
   margin: 2rem;
 }
 .welcome-grid__social-media a:link, .welcome-grid__social-media a:visited {
@@ -100,16 +111,19 @@ p {
     grid-template-areas: 
       'navbar .'
       'image myPic'
-      'image myName'
-      'image myEd'
-      'image socialMedia'
+      'image my-name'
+      'image my-education'
+      'image my-social-media'
       'image .'
       'image downloadResume';
     height: 46.5rem;
+    width: 100%;
   }
   
   .welcome-grid__image {
     margin-bottom: 0rem;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .welcome-grid__my-pic img {
