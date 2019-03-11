@@ -1,4 +1,5 @@
 .body {
+  background-color: #f7f4e4;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -17,11 +18,11 @@
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   letter-spacing: 0.1rem;
-  color: slategrey;
+  color: #edb;
   margin-bottom: 1rem;
 }
-.body__header--tan {
-  color: #edb;
+.body__header--grey {
+  color: slategrey;
 }
 
 .button {
@@ -141,20 +142,26 @@
 
 /** */
 /* making second card */
-/** */
+/* **/
 
 .about-me-card {
-  background-color: #f7f4e4;
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   text-align: justify;
 }
-
 @media (min-width: 700px) {
-  .about-me-card {
+  .about-me-card--desktop {
     padding-left: 15rem;
     padding-right: 20rem;
   }
+}
+
+/** */
+/* skills card */
+/* **/
+
+.skills-grid {
+
 }
