@@ -6,15 +6,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
-    <script type="text/javascript" src="js/index.scripts.js"></script>
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <title>Tyler Gregory</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+    <!-- jQuery and Bootstrap JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/index.scripts.js"></script>
+    <script src="js/jquery.easing.js"></script>
   </head>
+
   <body class="body">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="mainNav">
       <h1 class="navbar__header nav-link">Tyler Gregory</h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,13 +33,15 @@
           <a class="nav-link" href="#bio">Bio</a>
           <a class="nav-link" href="#">Skills</a>
           <a class="nav-link" href="#">Contact</a>       
-          </div>
+        </div>
       </div>
     </nav>
     <div class="welcome-card">
     </div>
+
     <!-- About me card -->
-    <div class="bio-card" id="bio">
+    <section id="bio"></section>
+    <div class="bio-card">
       <p>
         A penchant for beauty is what drives me: I love creating and experiencing
         beauty wherever it is found, which has gifted me a strong sense of motivation,
