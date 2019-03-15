@@ -13,18 +13,26 @@ $(document).ready(function(){
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
-          scrollTop: $(hash).offset().top
+          scrollTop: $(hash).offset().top - 75
         }, 1000, "easeInOutExpo");
       } // End if
     });
 
     $('body').scrollspy({
         target: '#mainNav',
-        offset: 56
+        offset: 125
     });
 
     $('a').on('click', function(event) {
         $('.navbar-collapse').collapse('hide');
     });
 
-  });
+    // Start progress bar animation once it is within the viewport
+    var waypoint = new Waypoint({
+      element: document.getElementById('skills'),
+      handler: function(direction) {
+        $('.progress-bar').addClass('progress-bar--fill');
+      },
+      offset: '85%' 
+    })
+});

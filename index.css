@@ -1,19 +1,21 @@
-/* html {
-  scroll-behavior: smooth;
+.navbar__header {
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+  font-family: 'Quicksand', sans-serif;
+}
+/* .navbar {
+  max-height: 2.5rem;
 } */
 
-.navbar__header {
-  font-size: 1rem;
-  margin-top: 0.3rem;
-  /* color: black; */
-}
-
 .body {
+  text-align: justify;
+  font-family: 'Cormorant Garamond', serif;
+  /* font-weight: 100; */
+}
+.body__header {
+  color: #a6a6a6;
   font-family: 'Quicksand', sans-serif;
-  /* text-align: center; */
-  /* background-color: #343434; */
-  /* color: #CCDAD1; */
-  /* color: #ddd; */
+  margin-bottom: 1rem;
 }
 
 .welcome-card {
@@ -27,13 +29,38 @@
   background-size: cover;
 }
 
-.bio-card {
-  position: absolute;
-  margin-top: 3rem;
+.my-card {
+  /* position: absolute; */
+  margin-top: 2rem;
   font-size: 1.3rem;
   padding-left: 15%;
   padding-right: 15%;
-  text-align: justify;
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 100;
+}
+
+.stylish-hr {
+  margin-top: 2.5rem;
+  max-width: 50%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.skill {
+  margin-bottom: 1rem;
+}
+.skill__name {
+  /* Applied to h2 elements in #skills */
+  font-size: 1.5rem;
+}
+
+@keyframes fill-progress-bar {
+  0% { width: 0; }
+}
+.progress {
+  height: 0.25rem !important;
+}
+.progress-bar--fill {
+  width: var(--progress);
+  background-color: grey !important;
+  animation: fill-progress-bar 1.25s;
 }
