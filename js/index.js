@@ -27,6 +27,12 @@ $(document).ready(function(){
         $('.navbar-collapse').collapse('hide');
     });
 
+    $('.scroll-background__scroller').on('click', function(event) {
+      $('html, body').animate({
+        scrollTop: $('#mainNav').offset().top
+      }, 1000, "easeInOutExpo");
+    })
+
     // Start progress bar animation once it is within the viewport
     var waypoint = new Waypoint({
       element: document.getElementById('skills'),
