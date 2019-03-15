@@ -3,9 +3,6 @@
   margin-top: 0.3rem;
   font-family: 'Quicksand', sans-serif;
 }
-/* .navbar {
-  max-height: 2.5rem;
-} */
 
 .body {
   text-align: justify;
@@ -20,9 +17,8 @@
 
 .welcome-card {
   position: fixed;
-  min-height: 45rem;
   width: 100%;
-  height: auto;
+  height: 100%;
 
   background-image: url("img/blake-connally-373084-unsplash.jpg");
   background-position: center;
