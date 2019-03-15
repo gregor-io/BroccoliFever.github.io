@@ -19,7 +19,7 @@
 }
 
 .welcome-card {
-  position: relative;
+  position: fixed;
   min-height: 45rem;
   width: 100%;
   height: auto;
@@ -27,6 +27,12 @@
   background-image: url("img/blake-connally-373084-unsplash.jpg");
   background-position: center;
   background-size: cover;
+  z-index: -1;
+}
+
+.main-card {
+  background-color: white;
+  padding-top: 0.5rem;
 }
 
 .my-card {
@@ -35,6 +41,7 @@
   font-size: 1.3rem;
   padding-left: 15%;
   padding-right: 15%;
+  z-index: 1;
 }
 
 .stylish-hr {
