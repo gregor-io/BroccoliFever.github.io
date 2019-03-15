@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     $('body').scrollspy({
         target: '#mainNav',
-        offset: 125
+        offset: 175
     });
 
     $('a').on('click', function(event) {

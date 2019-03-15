@@ -3,11 +3,13 @@
   margin-top: 0.3rem;
   font-family: 'Quicksand', sans-serif;
 }
+.navbar {
+  font-family: 'Quicksand', sans-serif;
+}
 
 .body {
   text-align: justify;
   font-family: 'Cormorant Garamond', serif;
-  /* font-weight: 100; */
 }
 .body__header {
   color: #a6a6a6;
@@ -15,33 +17,37 @@
   margin-bottom: 1rem;
 }
 
-.welcome-card {
-  position: fixed;
+.scroll-background {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
 
   background-image: url("img/blake-connally-373084-unsplash.jpg");
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
+
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  color: white;
+}
+.scroll-background__header {
+  padding-top: 6rem;
 }
 
 .main-card {
   background-color: white;
-  padding-top: 0.5rem;
-}
-
-.my-card {
-  /* position: absolute; */
-  margin-top: 2rem;
-  font-size: 1.3rem;
+  padding-top: 2rem;
   padding-left: 15%;
   padding-right: 15%;
+  font-size: 1.3rem;
   z-index: 1;
 }
 
 .stylish-hr {
-  margin-top: 2.5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   max-width: 50%;
   border: 0;
   height: 1px;
@@ -54,13 +60,28 @@
 .skill__name {
   /* Applied to h2 elements in #skills */
   font-size: 1.5rem;
+  margin-top: -0.9rem;
+}
+.row {
+  margin-top: 2rem;
+}
+@media (min-width: 700px) {
+  .row {
+    margin-bottom: -1rem !important;
+  }
 }
 
 @keyframes fill-progress-bar {
   0% { width: 0; }
 }
 .progress {
-  height: 0.25rem !important;
+  height: 0.1rem !important;
+  border-radius: 0 !important;
+  overflow: unset !important;
+}
+.progress-bar {
+  height: 0.3rem !important;
+  margin-top: -0.1rem !important;
 }
 .progress-bar--fill {
   width: var(--progress);
