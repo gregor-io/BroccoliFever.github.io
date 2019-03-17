@@ -16,7 +16,7 @@
   margin-bottom: 1rem;
 }
 
-.scroll-background {
+.landing-page {
   width: 100%;
   min-height: 100vh;
 
@@ -29,13 +29,17 @@
 
   text-align: center;
 }
-.scroll-background__text {
+.landing-page__text {
   padding-top: 4rem;
   color: rgba(255, 255, 255, 0.5);
 }
-.scroll-background__scroller {
+.landing-page__scroller {
+  position: absolute;
   cursor: pointer;
+  bottom: 0;
+  margin-bottom: 0.5%;
 }
+
 
 .main-card {
   background-color: white;

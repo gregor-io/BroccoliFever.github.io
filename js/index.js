@@ -1,44 +1,94 @@
-$(document).ready(function(){
-    // Add smooth scrolling to all links
-    $('a').on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-  
-        // Store hash
-        var hash = this.hash;
-  
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top - 200
-        }, 1000, "easeInOutExpo");
-      } // End if
-    });
+$(document).ready(function () {
+  // Add smooth scrolling to all links
+  $('a').on('click', function (event) {
 
-    $('body').scrollspy({
-        target: '#mainNav',
-        offset: 175
-    });
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-    $('a').on('click', function(event) {
-        $('.navbar-collapse').collapse('hide');
-    });
+      // Store hash
+      var hash = this.hash;
 
-    $('.scroll-background__scroller').on('click', function(event) {
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $('#mainNav').offset().top
+        scrollTop: $(hash).offset().top - 200
       }, 1000, "easeInOutExpo");
-    })
+    } // End if
+  });
 
-    // Start progress bar animation once it is within the viewport
-    var waypoint = new Waypoint({
-      element: document.getElementById('skills'),
-      handler: function(direction) {
-        $('.progress-bar').addClass('progress-bar--fill');
-      },
-      offset: '85%' 
-    })
+  $('body').scrollspy({
+    target: '#mainNav',
+    offset: 175
+  });
+
+  $('a').on('click', function (event) {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+  $('.scroll-background__scroller').on('click', function (event) {
+    $('html, body').animate({
+      scrollTop: $('#mainNav').offset().top
+    }, 1000, "easeInOutExpo");
+  })
+
+  // Start progress bar animation once it is within the viewport
+  // There has got to be a better way to do this...
+  var cppWaypoint = new Waypoint({
+    element: document.getElementById('c++'),
+    handler: function (direction) {
+      $('#cpp-progress').addClass('progress-bar--fill');
+    },
+    offset: '90%'
+  })
+  var htmlcssWaypoint = new Waypoint({
+    element: document.getElementById('html/css'),
+    handler: function (direction) {
+      $('#htmlcss-progress').addClass('progress-bar--fill');
+    },
+    offset: '90%'
+  })
+  var bootstrapWaypoint = new Waypoint({
+    element: document.getElementById('bootstrap4'),
+    handler: function (direction) {
+      $('#bootstrap4-progress').addClass('progress-bar--fill');
+    },
+    offset: '90%'
+  })
+  var javaWaypoint = new Waypoint({
+    element: document.getElementById('java'),
+    handler: function (direction) {
+      $('#java-progress').addClass('progress-bar--fill');
+    },
+    offset: '90%'
+  })
+  var pythonWaypoint = new Waypoint({
+    element: document.getElementById('python'),
+    handler: function (direction) {
+      $('#python-progress').addClass('progress-bar--fill');
+    },
+    offset: '90%'
+  })
+  var jsWaypoint = new Waypoint({
+    element: document.getElementById('javascript'),
+    handler: function (direction) {
+      $('#javascript-progress').addClass('progress-bar--fill');
+    },
+    offset: '90%'
+  })
+  var linuxWaypoint = new Waypoint({
+    element: document.getElementById('linux'),
+    handler: function (direction) {
+      $('#linux-progress').addClass('progress-bar--fill');
+    },
+    offset: '90%'
+  })
+  var spanishWaypoint = new Waypoint({
+    element: document.getElementById('spanish'),
+    handler: function (direction) {
+      $('#spanish-progress').addClass('progress-bar--fill');
+    },
+    offset: '90%'
+  })
 });

@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+    "settings": {
+    },
+
+"javascript": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+},
+"css": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+},
+"html": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+},
+}
