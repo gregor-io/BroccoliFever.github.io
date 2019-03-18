@@ -1,3 +1,12 @@
+/* TODO: change classes to accent-color__* */
+
+.accent-color__background {
+  background-color: #9297c4
+}
+.accent-color__text {
+  color: #9297c4;
+}
+
 .navbar__header {
   font-size: 1.2rem;
   margin-top: 0.3rem;
@@ -13,7 +22,6 @@
 }
 .body__header {
   color: #9297c4;
-  /* color: #bebebe; */
   font-family: 'Cormorant Garamond', serif;
   margin-bottom: 1rem;
 }
@@ -22,6 +30,7 @@
 .landing-page {
   width: 100%;
   min-height: 55rem;
+  /* position: fixed; */
 
   background-image: url("img/blake-connally-373084-unsplash.jpg");
   background-attachment: fixed;
@@ -31,6 +40,11 @@
   z-index: -1;
 
   text-align: center;
+}
+@media (max-width: 700px) {
+  .landing-page {
+    transform: scale(.5);
+  }
 }
 .landing-page__header {
   padding-top: 4rem;
@@ -63,7 +77,6 @@
   font-size: 0.8rem;
   padding: 0.25rem;
   background-color: rgba(146, 151, 196, 0.50);
-  /* color: white; */
   text-align: center;
 }
 
