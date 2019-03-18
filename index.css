@@ -1,18 +1,15 @@
 /* TODO: change classes to accent-color__* */
 
 .accent-color__background {
-  background-color: #9297c4
+  background-color: #9297c4 !important;
 }
 .accent-color__text {
-  color: #9297c4;
+  color: #9297c4 !important;
 }
 
 .navbar__header {
   font-size: 1.2rem;
   margin-top: 0.3rem;
-}
-.navbar {
-  font-family: 'Quicksand', sans-serif;
 }
 
 .body {
@@ -21,7 +18,6 @@
   min-height: 100%;
 }
 .body__header {
-  color: #9297c4;
   font-family: 'Cormorant Garamond', serif;
   margin-bottom: 1rem;
 }
@@ -30,7 +26,6 @@
 .landing-page {
   width: 100%;
   min-height: 55rem;
-  /* position: fixed; */
 
   background-image: url("img/blake-connally-373084-unsplash.jpg");
   background-attachment: fixed;
@@ -51,7 +46,7 @@
   font-size: 4rem !important;
 }
 .landing-page__text {
-  color: rgba(146, 151, 196, 0.75);
+  opacity: 0.75;
   font-size: 1rem;
 }
 .landing-page__scroller {
@@ -60,11 +55,11 @@
   bottom: 0;
   margin-bottom: 0.5%;
   font-size: 1.5rem !important;
+  opacity: 0.75;
 }
 
 
 .main-card {
-  background-color: white;
   padding-top: 2rem;
   padding-left: 15%;
   padding-right: 15%;
@@ -76,7 +71,6 @@
   bottom: 0;
   font-size: 0.8rem;
   padding: 0.25rem;
-  background-color: rgba(146, 151, 196, 0.50);
   text-align: center;
 }
 
@@ -114,6 +108,5 @@
 }
 .progress-bar--fill {
   width: var(--progress);
-  background-color: rgb(146, 151, 196) !important;
   animation: fill-progress-bar 1.25s;
 }

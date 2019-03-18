@@ -39,56 +39,64 @@ $(document).ready(function () {
   var cppWaypoint = new Waypoint({
     element: document.getElementById('c++'),
     handler: function (direction) {
-      $('#cpp-progress').addClass('progress-bar--fill');
+      $('#cpp-progress').addClass('progress-bar--fill'),
+      $('#cpp-progress').addClass('accent-color__background');
     },
     offset: '90%'
   })
   var htmlcssWaypoint = new Waypoint({
     element: document.getElementById('html/css'),
     handler: function (direction) {
-      $('#htmlcss-progress').addClass('progress-bar--fill');
+      $('#htmlcss-progress').addClass('progress-bar--fill'),
+      $('#htmlcss-progress').addClass('accent-color__background');
     },
     offset: '90%'
   })
   var bootstrapWaypoint = new Waypoint({
     element: document.getElementById('bootstrap4'),
     handler: function (direction) {
-      $('#bootstrap4-progress').addClass('progress-bar--fill');
+      $('#bootstrap4-progress').addClass('progress-bar--fill'),
+      $('#bootstrap4-progress').addClass('accent-color__background');
     },
     offset: '90%'
   })
   var javaWaypoint = new Waypoint({
     element: document.getElementById('java'),
     handler: function (direction) {
-      $('#java-progress').addClass('progress-bar--fill');
+      $('#java-progress').addClass('progress-bar--fill'),
+      $('#java-progress').addClass('accent-color__background');
     },
     offset: '90%'
   })
   var pythonWaypoint = new Waypoint({
     element: document.getElementById('python'),
     handler: function (direction) {
-      $('#python-progress').addClass('progress-bar--fill');
+      $('#python-progress').addClass('progress-bar--fill'),
+      $('#python-progress').addClass('accent-color__background');
     },
     offset: '90%'
   })
   var jsWaypoint = new Waypoint({
     element: document.getElementById('javascript'),
     handler: function (direction) {
-      $('#javascript-progress').addClass('progress-bar--fill');
+      $('#javascript-progress').addClass('progress-bar--fill'),
+      $('#javascript-progress').addClass('accent-color__background');
     },
     offset: '90%'
   })
   var linuxWaypoint = new Waypoint({
     element: document.getElementById('linux'),
     handler: function (direction) {
-      $('#linux-progress').addClass('progress-bar--fill');
+      $('#linux-progress').addClass('progress-bar--fill'),
+      $('#linux-progress').addClass('accent-color__background');
     },
     offset: '90%'
   })
   var spanishWaypoint = new Waypoint({
     element: document.getElementById('spanish'),
     handler: function (direction) {
-      $('#spanish-progress').addClass('progress-bar--fill');
+      $('#spanish-progress').addClass('progress-bar--fill'),
+      $('#spanish-progress').addClass('accent-color__background');
     },
     offset: '90%'
   })
