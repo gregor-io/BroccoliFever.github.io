@@ -14,7 +14,8 @@ $(document).ready(function () {
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top - 200
-      }, 1000, "easeInOutExpo");
+      }, 1000);
+      // "easeInOutExpo" --> just as a reference if I want it back
     } // End if
   });
 
@@ -30,7 +31,7 @@ $(document).ready(function () {
   $('.landing-page__scroller').on('click', function (event) {
     $('html, body').animate({
       scrollTop: $('#mainNav').offset().top
-    }, 1000, "easeInOutExpo");
+    }, 1000);
   })
 
   // Start progress bar animation once it is within the viewport
