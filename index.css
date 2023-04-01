@@ -1,9 +1,28 @@
+:root {
+  --background: #282a36;
+  --white: #f8f8f2;
+  --slate: #44475a;
+  --subheader: #6272a4;
+  --slate-purple: #383A59;
+  --purple: #bd93f9;
+  --cyan: #8be9fd;
+  --orange: #ffb86c;
+  --pink: #ff79c6;
+  --green: #50fa7b;
+  --yellow: #f1fa8c;
+  --red: #ff5555;
+}
+
 .navbar__header {
   font-size: 1.2rem;
   margin-top: 0.3rem;
+  color: var(--green);
 }
 
 .body {
+  background-color: var(--background);
+  color: var(--white);
+  font-size: 1.3rem;
   text-align: justify;
   font-family: 'Quicksand', sans-serif;
   min-height: 100%;
@@ -11,24 +30,25 @@
 .body__header {
   font-family: 'Cormorant Garamond', serif;
   margin-bottom: 1rem;
+  font-size: 3rem;
+  color: var(--green);
 }
 .body__header--small {
-  font-size: 1.3rem;
+  font-size: 2rem;
+  color: var(--cyan);
 }
 .body__header--xsmall {
   font-size: 1rem;
+  color: var(--subheader);
 }
 .body__sub-header--reduced-margin {
   margin-top: -0.9rem;
 }
-.body__text--accent-color {
+/* .body__text--accent-color {
   color: #9297c4 !important;
-}
-.body__text--white {
-  color: white;
-}
+} */
 .body__background--accent-color {
-  background-color: #9297c4 !important;
+  background-color: var(--pink) !important;
 }
 .body__any--reduced-opacity {
   opacity: 0.75;
@@ -58,6 +78,7 @@
 .landing-page__header {
   padding-top: 4rem;
   font-size: 4rem !important;
+  color: var(--white)
 }
 .landing-page__scroller {
   position: absolute;
@@ -78,9 +99,10 @@
 .footer {
   margin-top: 5rem;
   bottom: 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding: 0.25rem;
   text-align: center;
+  background-color: var(--slate-purple);
 }
 
 .stylish-hr {
@@ -96,7 +118,14 @@
 /*****************************/
 
 .row {
-  margin-top: 2rem;
+  margin-top: 1rem;
+}
+
+.navbar-dark {
+  background-color: var(--background) !important;
+  box-shadow: 0rem 0.1rem 0.6rem rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0rem 0.1rem 0.6rem rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0rem 0.1rem 0.6rem rgba(0, 0, 0, 0.25);
 }
 
 @keyframes fill-progress-bar {
@@ -106,6 +135,7 @@
   height: 0.1rem !important;
   border-radius: 0 !important;
   overflow: unset !important;
+  margin-top: 0.3rem;
 }
 .progress-bar {
   height: 0.3rem !important;
